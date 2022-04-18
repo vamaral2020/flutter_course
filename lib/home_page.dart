@@ -11,6 +11,8 @@ class HomePage extends StatefulWidget {
 class HomePageState extends State<HomePage> {
   int count = 0;
 
+  var children;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,13 +23,45 @@ class HomePageState extends State<HomePage> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: ListView(
+          //mainAxisAlignment: MainAxisAlignment.center,
+          scrollDirection: Axis.vertical,
           children: [
             Text('CONTADOR:  $count'),
-            Container(
-              height: 20,
-            ),
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 10),
+            CustomSwitch(),
+            Container(height: 10),
+            CustomSwitch(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.center,
